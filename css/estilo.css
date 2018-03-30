@@ -1,46 +1,141 @@
-.header{
-    overflow: hidden;
-}
-
 body{
     background-image: url(../img/background-areia.jpg);
 }
 
-a{
-    text-decoration: none;
+.header{
+    width: 50%;
+    margin: auto;
 }
 
 .header .logo{
     float: left;
-    width: 269px;
-    height: 171px;
-    margin: 8px 0 8px 20px;
+    padding: 15px;
 }
 
-.header .social {
+.header .socialMedia{
     float: right;
-    width: 170px;
-    height: 60px;
-    margin: 65px 35px 35px;
-    color: black;
 }
 
-.header .social .telefone{
-    color: black;
+.header p{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
 }
 
+.header .socialMedia .telefone{
+    font-size: 20px;
+    font-weight: bold;
+}
 
-#menuSuperior{
+.header .socialMedia .telefone #ddd{
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.header ul{
+    overflow: auto;
+}
+
+.header ul li{
+	list-style-type: none;
+    float: left;
+}
+
+.header ul li a i{
+	background: #205D7A;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+
+.header .fa-facebook{
+    background:#3b5998;
+    color: white;
+} 
+
+.header .fa-linkedin{
+    background:#007bb6;
+    color: white;
+}
+.header .fa-youtube{
+    background: #bb0000;
+    color: white;
+}
+  
+.header .fa-instagram{
+    background: #125688;
+    color: white;
+}
+
+.header .socialIcon{
+    float: right;
+}
+/* ------------------- MENU SUPERIOR ------------------- */
+.menuSuperior{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.menuSuperior ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-li{
-    display: inline;
+.menuSuperior li {
+    float: left;
 }
 
-*{
+.menuSuperior li a, .menuSuperior .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuSuperior li a:hover, .menuSuperior .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.menuSuperior li.dropdown {
+    display: inline-block;
+}
+
+.menuSuperior .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menuSuperior .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menuSuperior .dropdown-content a:hover {background-color: #f1f1f1}
+
+.menuSuperior .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/**{
     box-sizing: border-box;
 }
 .row::after {
@@ -63,4 +158,4 @@ li{
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;}*/

@@ -5,6 +5,9 @@
         <title>Pintando 7 - Onde é divertido aprender!</title>
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="src/script.js"></script>
@@ -12,20 +15,35 @@
 
     <!-- BODY -->
     <body>
+    <!-- HEADER -->
         <div class="header">
             <div class="logo">
                 <a href="index.html"><img src="img/header-logo.png"></a>
             </div>        
-            <div class="social">
-                <p>SIGA AS REDES SOCIAIS</p>
-                <ul>
-                    <li class="facebook"><a href="//www.facebook.com/cepintando07">FACE</a></li>
-                    <li class="twitter"><a href="//twitter.com/cepintando7">TWITTER</a></li>
-                    <li class="youtube"><a href="//www.youtube.com/user/cepintando7">YOUTUBE</a></li>
-                    <li class="instagram"><a href="//www.instagram.com/cepintando7">INSTA</a></li>
+            <div class="socialMedia">
+                <p class="followSocialMedia">SIGA AS REDES SOCIAIS</p>
+                <ul class="socialIcons">  
+                    <li><a href="http://www.facebook.com/cepintando07"><i class="fa fa-facebook"></i></a></li> 
+                    <li><a href="http://www.twitter.com/cepintando7"><i class="fa fa-twitter"></i></a></li> 
+                    <li><a href="http://www.youtube.com/user/cepintando7"><i class="fa fa-youtube"></i></a></li>                
+                    <li><a href="http://www.instagram.com/cepintando7"><i class="fa fa-instagram"></i></a></li> 
                 </ul>
-                <p class="telefone"><span>(15)</span> 3284-2411</p>
-            </div>
+                <p class="telefone"><span id="ddd">(15)</span> 3284-2411</p>
+            </div>            
+        </div>
+        <div class="headerDivider"><img src="img/division-colours.png"></div>
+    <!-- SECAO 1 -->
+        <div class="menuSuperior">
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </body>    
 </html>
