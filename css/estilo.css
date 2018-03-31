@@ -1,7 +1,10 @@
+/* ------------------- BACKGROUND ------------------- */
+
 body{
     background-image: url(../img/background-areia.jpg);
 }
 
+/* ------------------- HEADER LOGO E SOCIAL MEDIA ------------------- */
 .header{
     width: 50%;
     margin: auto;
@@ -30,64 +33,65 @@ body{
 }
 
 .header .socialMedia .telefone #ddd{
-    font-size: 20px; 
+    font-size: 13px; 
     font-weight: bold;
 }
 
-.header ul{
-    overflow: auto;
+.header .socialMedia ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
 }
 
-.header ul li{
-	list-style-type: none;
-    float: left;
+.header .socialMedia li{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
 
-.header ul li a i{
-	background: #205D7A;
-	color: #fff;
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	font-size: 25px;
-	text-align: center;
-	margin-right: 10px;
-	padding-top: 15%;
+.header .socialMedia .socialIcons{
+    font-size: 36px;
+    color: black;
 }
 
-.header .fa-facebook{
-    background:#3b5998;
-    color: white;
-} 
-
-.header .fa-linkedin{
-    background:#007bb6;
-    color: white;
-}
-.header .fa-youtube{
-    background: #bb0000;
-    color: white;
-}
-  
-.header .fa-instagram{
-    background: #125688;
-    color: white;
+.header .socialMedia .socialIcons a:link,
+.header .socialMedia .socialIcons a:visited,
+.header .socialMedia .socialIcons a:hover,
+.header .socialMedia .socialIcons a:active{
+    text-decoration: none;
 }
 
-.header .socialIcon{
-    float: right;
+/* Add a hover effect if you want */
+.header .fa:hover {
+    opacity: 0.7;
 }
+
+.header .fa:before {
+    text-decoration: none;
+}
+
+/* ------------------- HEADER DIVIDER ------------------- */
+.headerDivider img{
+    width: 100%;
+}
+
 /* ------------------- MENU SUPERIOR ------------------- */
 .menuSuperior{
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
 }
 
 .menuSuperior ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    margin-left: 7%;
+    padding: 0;    
     overflow: hidden;
 }
 
@@ -95,42 +99,79 @@ body{
     float: left;
 }
 
-.menuSuperior li a, .menuSuperior .dropbtn {
+.menuSuperior li a, .menuSuperior .dropbtn1 {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.menuSuperior li a:hover, .menuSuperior .dropdown:hover .dropbtn {
-    background-color: red;
+/*ANTERIOR: .menuSuperior .dropdown:hover .dropbtn, .menuSuperior li a:hover*/  
+.menuSuperior .dropdown1:hover .dropbtn1,
+.menuSuperior .dropdown4:hover .dropbtn4{
+    background-color: #FF4B3B;
+    color: white;
 }
 
-.menuSuperior li.dropdown {
+.menuSuperior .dropdown2:hover .dropbtn2,
+.menuSuperior .dropdown5:hover .dropbtn5{
+    background-color: #157AD0;
+    color: white;
+}
+
+.menuSuperior .dropdown3:hover .dropbtn3{
+    background-color: #F6BD11;
+    color: white;
+}
+
+.menuSuperior li.dropdown1,
+.menuSuperior li.dropdown2,
+.menuSuperior li.dropdown3,
+.menuSuperior li.dropdown4,
+.menuSuperior li.dropdown5{
     display: inline-block;
 }
 
-.menuSuperior .dropdown-content {
+.menuSuperior .dropdown-content1, 
+.menuSuperior .dropdown-content2,
+.menuSuperior .dropdown-content3,
+.menuSuperior .dropdown-content4,
+.menuSuperior .dropdown-content5 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 10%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.menuSuperior .dropdown-content a {
+.menuSuperior .dropdown-content1 a,
+.menuSuperior .dropdown-content2 a,
+.menuSuperior .dropdown-content3 a,
+.menuSuperior .dropdown-content4 a,
+.menuSuperior .dropdown-content5 a {
     color: black;
+    font-size: 0.75em;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.menuSuperior .dropdown-content a:hover {background-color: #f1f1f1}
+.menuSuperior .dropdown-content1 a:hover,
+.menuSuperior .dropdown-content2 a:hover,
+.menuSuperior .dropdown-content3 a:hover,
+.menuSuperior .dropdown-content4 a:hover,
+.menuSuperior .dropdown-content5 a:hover{
+    background-color: #f1f1f1
+}
 
-.menuSuperior .dropdown:hover .dropdown-content {
+.menuSuperior .dropdown1:hover .dropdown-content1,
+.menuSuperior .dropdown2:hover .dropdown-content2,
+.menuSuperior .dropdown3:hover .dropdown-content3,
+.menuSuperior .dropdown4:hover .dropdown-content4,
+.menuSuperior .dropdown5:hover .dropdown-content5 {
     display: block;
 }
 
