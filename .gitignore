@@ -1,0 +1,6 @@
+bower_components
+node_modules
+psd
+sass
+package.json
+package-lock.json
