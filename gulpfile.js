@@ -10,8 +10,12 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function(){
+
 	//localiza o caminho onde o arquivo sass esta salvo
-	return gulp.src('sass/**/*.sass')
+	return gulp.src([
+		'node_modules/bootstrap/scss/bootstrap.scss',
+		'sass/**/*.sass'
+		])
 	//mimifica o arquivo css
 	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	//salva na pasta css
