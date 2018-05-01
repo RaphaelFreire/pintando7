@@ -1,0 +1,75 @@
+header
+	+clearfix
+	width: 100%
+	min-height: 200px
+	position: relative
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: 75px
+		width: 100%
+		height: 5px
+		background: -webkit-linear-gradient(left, $colorHrHeader_group_1, $colorHrHeader_group_2, $colorHrHeader_group_3, $colorHrHeader_group_4)
+
+	
+
+	.logo
+		img
+			display: block
+			margin: 10px auto 10px auto
+			width: 269px
+			height: 171px	
+	
+	.telefone
+		text-align: center
+		text-transform: uppercase
+		color: $azul
+		+font-size(30px)
+		margin-top: 60px
+
+		+breakpoint($celular)
+			margin-top: 25px
+		
+		p
+	
+			i 
+				color: $branco
+				text-align: center
+				background-color: $azul	
+				padding: 10px
+				+font-size(20px)	
+				+border-radius(10px)
+		
+		
+	.social
+		text-align: center
+		text-transform: uppercase
+		color: $azul
+		margin-top: 60px
+
+		+breakpoint($celular)
+			margin-top: 25px
+		a
+			i 
+				color: $branco
+				text-align: center
+				background-color: $azul	
+				padding: 11px
+				+font-size(20px)	
+				+border-radius(10px)
+	
+	.navbar-toggler
+		color: $preto
+		margin-top: 20px
+
+	.navbar-expand-lg .navbar-nav .nav-link
+		color: $azul !important
+
+	.menu
+		ul
+			li
+				+font-size(30px)
+				margin-left: 30px
+
+					

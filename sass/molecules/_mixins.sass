@@ -1,0 +1,90 @@
+/* ======== Cores */
+$preto: #000
+$branco: white
+$azul: #004da5
+$azul-claro: #016fd2
+$vermelho: #ed0f1a
+$vermelho-claro: #fe494f
+$amarelo: #fda805
+$amarelo-claro: #fdc120
+$amarelo-papel: #f0edda
+$verde: #9ad15e
+$cinza-claro: #e1e1e1
+
+
+/* ======== REGUA */
+$cor1: #004DA5
+$cor2: #006ED2
+$cor3: #EE1821
+$cor4: #FF3C46
+$cor5: #FCAC14
+$cor6: #FDC11F
+
+$colorHrHeader_group_1: $cor1 0%, $cor1 3%, $cor2 3%, $cor2 6%, $cor3 6%, $cor3 10%, $cor4 10%, $cor4 14%, $cor5 14%, $cor5 22%,$cor6 22%, $cor6 25%
+$colorHrHeader_group_2: $cor1 25%, $cor1 28%, $cor2 28%, $cor2 33%, $cor3 33%, $cor3 35%, $cor4 35%, $cor4 40%, $cor5 40%, $cor5 48%,$cor6 48%, $cor6 50%
+$colorHrHeader_group_3: $cor1 50%, $cor1 53%, $cor2 53%, $cor2 56%, $cor3 56%, $cor3 60%, $cor4 60%, $cor4 64%, $cor5 64%, $cor5 72%,$cor6 72%, $cor6 75%
+$colorHrHeader_group_4: $cor1 75%, $cor1 78%, $cor2 78%, $cor2 83%, $cor3 83%, $cor3 85%, $cor4 85%, $cor4 90%, $cor5 90%, $cor5 98%,$cor6 98%, $cor6 100%
+
+
+
+
+/* ======== Font */
+$light: 300
+$regular: 400
+$bold: 700
+
+$celular: max-width 440px
+$tablet: max-width 991px
+
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2 
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+/* ======== Outros */
+=transition($transition...) 
+  -moz-transition:    all $transition linear
+  -o-transition:      all $transition linear
+  -webkit-transition: all $transition linear
+  transition:         all $transition linear
+
+=border-radius($radius) 
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@function calculateRem($size) 
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+=font-size($size) 
+  font-size: $size
+  font-size: calculateRem($size)
+
+=opacity($opacity) 
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie)
+
+/* ======== Background Color Opacity */
+=background-opacity($color: #000, $opacity: 0.85) 
+  background: $color
+  background: rgba($color, $opacity)
+
+/* ======== Columns */
+=columns($count: 3, $gap: 10) 
+  @include css3-prefix('column-count', $count)
+  @include css3-prefix('column-gap', $gap)
