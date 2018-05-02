@@ -1,0 +1,26 @@
+main
+	.social-video
+		text-align: center
+		text-transform: uppercase
+		color: $azul
+		+breakpoint($celular)
+		ul
+			li
+				a
+					i 
+						color: $branco
+						display: block
+						text-align: center
+						width: 100%
+						padding: 42px
+						+font-size(50px)
+				&:nth-child(1)
+					background-color: $vermelho
+
+				&:nth-child(2)
+					background-color: $azul
+
+				&:nth-child(3)
+					background-color: $amarelo
+				
+				

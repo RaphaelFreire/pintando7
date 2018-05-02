@@ -7,7 +7,7 @@ header
 		content: ""
 		display: block
 		position: absolute
-		bottom: 75px
+		bottom: 0px
 		width: 100%
 		height: 5px
 		background: -webkit-linear-gradient(left, $colorHrHeader_group_1, $colorHrHeader_group_2, $colorHrHeader_group_3, $colorHrHeader_group_4)
@@ -26,50 +26,71 @@ header
 		text-transform: uppercase
 		color: $azul
 		+font-size(30px)
-		margin-top: 60px
+		margin-top: 65px
 
 		+breakpoint($celular)
 			margin-top: 25px
-		
+
+		+breakpoint($tablet)
+			margin-top: 25px
 		p
 	
 			i 
 				color: $branco
 				text-align: center
 				background-color: $azul	
-				padding: 10px
-				+font-size(20px)	
-				+border-radius(10px)
+				margin-top: 5px
+				width: 30px
+				height: 30px
+				padding: 7px
+				+font-size(15px)	
+				+border-radius(120px)
 		
 		
 	.social
 		text-align: center
 		text-transform: uppercase
 		color: $azul
-		margin-top: 60px
+		margin-top: 65px
 
 		+breakpoint($celular)
 			margin-top: 25px
+
+		+breakpoint($tablet)
+			margin-top: 25px
+			
 		a
 			i 
 				color: $branco
 				text-align: center
-				background-color: $azul	
-				padding: 11px
-				+font-size(20px)	
-				+border-radius(10px)
+				background-color: $azul
+				margin-top: 5px	
+				width: 30px
+				height: 30px
+				padding: 7px
+				+font-size(15px)	
+				+border-radius(120px)
 	
 	.navbar-toggler
 		color: $preto
-		margin-top: 20px
+		margin-top: 10px
+		margin-bottom: 10px
 
 	.navbar-expand-lg .navbar-nav .nav-link
-		color: $azul !important
+		color: $azul !important		
+
+	.navbar
+		margin: 5px
+		padding: 0px
 
 	.menu
 		ul
 			li
 				+font-size(30px)
 				margin-left: 30px
+				a
+					color: $azul
+					
+
 
 					
