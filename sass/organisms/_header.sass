@@ -11,22 +11,19 @@ header
 		width: 100%
 		height: 5px
 		background: -webkit-linear-gradient(left, $colorHrHeader_group_1, $colorHrHeader_group_2, $colorHrHeader_group_3, $colorHrHeader_group_4)
-
 	
+	.vertical
+		display: flex
+		align-items: center
 
 	.logo
 		img
 			display: block
 			margin: 10px auto 10px auto
-			width: 269px
-			height: 171px	
-	
+			
 	.telefone
 		text-align: center
-		text-transform: uppercase
 		color: $azul
-		+font-size(30px)
-		margin-top: 65px
 
 		+breakpoint($celular)
 			margin-top: 25px
@@ -34,7 +31,8 @@ header
 		+breakpoint($tablet)
 			margin-top: 25px
 		p
-	
+			+font-size(18px)	
+
 			i 
 				color: $branco
 				text-align: center
@@ -45,14 +43,16 @@ header
 				padding: 7px
 				+font-size(15px)	
 				+border-radius(120px)
+		h2
+			+font-size(18px)	
+
 		
 		
 	.social
 		text-align: center
-		text-transform: uppercase
 		color: $azul
-		margin-top: 65px
 
+		
 		+breakpoint($celular)
 			margin-top: 25px
 
@@ -70,6 +70,10 @@ header
 				padding: 7px
 				+font-size(15px)	
 				+border-radius(120px)
+
+		h2 
+			+font-size(18px)	
+
 	
 	.navbar-toggler
 		color: $preto
@@ -77,19 +81,31 @@ header
 		margin-bottom: 10px
 
 	.navbar-expand-lg .navbar-nav .nav-link
-		color: $azul !important		
+		color: $azul !important
+		margin-left: 30px
 
-	.navbar
-		margin: 5px
-		padding: 0px
+		+breakpoint($celular)
+			margin-left: 0px
 
+		+breakpoint($tablet)
+			margin-left: 0px
+		
+
+
+	.nav-link
+			text-align: center
+
+	.dropdown-menu
+		text-align: center
+		
 	.menu
 		ul
 			li
-				+font-size(30px)
-				margin-left: 30px
 				a
 					color: $azul
+					+font-size(20px)
+				
+
 					
 
 
