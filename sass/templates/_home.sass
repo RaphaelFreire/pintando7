@@ -15,12 +15,18 @@ main
 						+font-size(50px)
 				&:nth-child(1)
 					background-color: $vermelho
+					i
+						color: $tom-medio
 
 				&:nth-child(2)
 					background-color: $azul
+					i
+						color: $tom-medio
 
 				&:nth-child(3)
 					background-color: $amarelo
+					i
+						color: $tom-medio
 
 	.card
 		border-radius: 0px
@@ -38,14 +44,47 @@ main
 
 	.estrutura
 		background-color: $vermelho
-	
+		h5
+			color: $tom-medio
+		i
+			color: $tom-medio
+
 	.parcerias
 		background-color: $amarelo
+
+		h5
+			color: $tom-medio
+		i
+			color: $tom-medio
 	
 	.contato
 		background-color: $azul
 
+		h5
+			color: $tom-medio
+		i
+			color: $tom-medio
+
 	.album
+		color: $tom-medio 
+		h2
+			+font-size(25px)
+			display: flex
+			align-items: center
+			justify-content: center
+			
+			+breakpoint($celular)
+				+font-size(25px)
+
+			+breakpoint($tablet)
+				+font-size(25px)
+
+		i
+			+font-size(50px)
+			margin-right: 10px
+
+	.video
+		color: $tom-medio 
 		h2
 			+font-size(25px)
 			display: flex
@@ -73,6 +112,7 @@ main
 		p
 			margin-bottom: 20px
 			line-height: 1.5rem
+
 
 		
 

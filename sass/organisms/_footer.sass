@@ -15,33 +15,56 @@ footer
 
 
 .social
-		text-align: center
-		color: $azul
+	text-align: center
+	color: $azul
 
-		
-		+breakpoint($celular)
-			margin-top: 25px
+	
+	+breakpoint($celular)
+		margin-top: 25px
 
-		+breakpoint($tablet)
-			margin-top: 25px
+	+breakpoint($tablet)
+		margin-top: 25px
 			
-		a
-			i 
-				color: $branco
-				text-align: center
-				background-color: $azul
-				margin-top: 5px	
-				width: 30px
-				height: 30px
-				padding: 7px
-				+font-size(15px)	
-				+border-radius(120px)
+	a
+		i 
+			color: $branco
+			text-align: center
+			background-color: $azul
+			margin-top: 5px	
+			width: 30px
+			height: 30px
+			padding: 7px
+			+font-size(15px)	
+			+border-radius(120px)
 
-		h2 
-			+font-size(18px)
+	h2 
+		+font-size(18px)
 
 address
 	margin-bottom: 20px
 	line-height: 1.5rem
+
+	+breakpoint($celular)
+		text-align: center
+
+	+breakpoint($tablet)
+		text-align: center
+	
+form
+
+	.botao
+		line-height: 1.2rem
+		display: block
+		width: 150px
+
+		+breakpoint($celular)
+			display: block
+			margin-left: 0px
+			width: 100%
+
+		+breakpoint($tablet)
+			display: block
+			margin-left: 0px
+			width: 100%
 
 	
