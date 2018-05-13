@@ -83,6 +83,9 @@ main
 			+font-size(50px)
 			margin-right: 10px
 
+	.faixa
+		background-color: $amarelo
+
 	.video
 		color: $tom-medio 
 		h2
@@ -102,16 +105,17 @@ main
 			margin-right: 10px
 
 
-	.atitude
-		
+	.atitude	
 		h5
 			+font-size(25px)
 			margin-bottom: 25px
-			text-transform: uppercase	
+			text-transform: uppercase
+			color: $azul	
 
 		p
 			margin-bottom: 20px
 			line-height: 1.5rem
+			color: $tom-medio
 
 	.carousel-item
 		&:nth-child(1)
@@ -120,6 +124,22 @@ main
 		 +gradient(180deg, $amarelo, $amarelo-papel)
 		&:nth-child(3)
 		 +gradient(180deg, $vermelho, $amarelo-papel)
+
+	.carousel-item
+
+		h4
+			margin-top: 10px
+			color: $azul
+			text-shadow: none
+			+font-size(18px)
+		p 	
+			margin-top: 10px
+			color: $tom-medio
+			text-shadow: none
+
+	.carousel-indicators
+		margin-left: 100px	
+
 
 
 
